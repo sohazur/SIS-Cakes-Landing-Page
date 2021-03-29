@@ -79,7 +79,7 @@ section #video {
 }
 
 section #items {
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
