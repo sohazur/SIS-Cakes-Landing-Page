@@ -1,3 +1,138 @@
 body {
-    background-color: #EEEEEE;
+    background-color: #F0F4F9;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+header {
+    
+    #header-img {
+        margin-left: 5.5vw;
+    }
+    #header {
+        position: fixed;
+        top: 0;
+        height: 7.5vh;
+        width: 100%;
+        background: #F0F4F9;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        #nav-bar {
+            position: fixed;
+            right: 4vw;
+            top: 2.5%;
+            display: flex;
+            flex-wrap: nowrap;
+
+            .nav-link {
+                margin-left: 50px;
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+section {
+    text-align: center;
+    margin-top: 10vh;
+
+    #form {
+        margin-bottom: 9vh;
+    }
+
+    #email {
+        width: 250px;
+        height: 2.5vh;
+    }
+
+    #submit {
+        font-weight: bold;
+        background: yellow;
+        color: black;
+        border: none;
+        margin-top: 1vh;
+        font-size: 1.25rem;
+        width: 120px;
+        height: 3vh;
+    }
+    #submit:hover {
+        background: #FFA500;
+    }
+
+    .qualities {
+        text-align: left;
+        width: 70vw;
+        margin: auto;
+    }
+
+    #video {
+        margin: 10vh 0;
+    }
+
+    #items {
+        width: 75vw;
+        margin: 0 auto 3vh auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cakes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 30%;
+        height: 30vh;
+
+        h3 {
+            background-color: #DDDDDD;
+            width: 100%;
+            height: 4vh;
+            margin-top: 0;
+            padding-top: 2vh;
+        }
+
+        button {
+            background-color: yellow;
+            width: 33%;
+            height: 4vh;
+            margin: 8px 0;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #FFA500;
+        }
+    }
+
+    @media (max-width: 650px) {
+        #items {
+            flex-direction: column;
+        }
+    }
+}
+
+footer {
+    text-align: right;
+    margin: 0 auto;
+    background: #DDDDDD;
+    width: 80vw;
+    height: 9vh;
+
+    .foot-link {
+        font-size: 15px;
+        font-weight: 549;
+        margin-right: 2vw;
+        color: black;
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 13.5px;
+        font-weight: 300;
+        margin-right: 2.9vw;
+    }
 }
